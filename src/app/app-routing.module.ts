@@ -6,9 +6,10 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 // import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 
-import { LocalizeRouterModule, LocalizeRouterSettings, LocalizeParser, ManualParserLoader } from '@gilsdav/ngx-translate-router';
+import { LocalizeRouterModule, LocalizeRouterSettings, LocalizeParser, ManualParserLoader } from 'localize-router';
 // import { LocalizeRouterHttpLoader } from '@gilsdav/ngx-translate-router-http-loader';
 import { TranslateService } from '@ngx-translate/core';
+import { GotLostPageComponent } from './got-lost-page/got-lost-page.component';
 
 /* export function createTranslateLoader(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, settings, http)
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes', loadChildren: './heroes/heroes.module#HeroesModule' }
+  { path: 'heroes', loadChildren: './heroes/heroes.module#HeroesModule' },
+  { path: '**', component: GotLostPageComponent }
 ];
 
 @NgModule({

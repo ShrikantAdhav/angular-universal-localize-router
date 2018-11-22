@@ -46,6 +46,9 @@ app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
+
+  console.log('req - ', req);
+
   res.render(join(DIST_FOLDER, 'browser', 'index.html'), { req });
 });
 

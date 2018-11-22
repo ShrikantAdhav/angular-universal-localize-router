@@ -1,4 +1,4 @@
-import { LocalizeRouterModule } from "@gilsdav/ngx-translate-router";
+import { LocalizeRouterModule } from 'localize-router';
 import { RouterModule, Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
 import { HeroesComponent } from "./heroes.component";

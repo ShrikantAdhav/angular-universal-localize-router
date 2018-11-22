@@ -23,6 +23,7 @@ import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { environment } from '../environments/environment';
+import { GotLostPageComponent } from './got-lost-page/got-lost-page.component';
 
 // import { UniversalTranslateLoader } from '@ngx-universal/translate-loader';
 
@@ -59,7 +60,8 @@ export function createTranslateLoader(http: HttpClient) {
     // HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    GotLostPageComponent
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [ AppComponent ]

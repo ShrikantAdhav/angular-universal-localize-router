@@ -1,4 +1,4 @@
-import {LocalizeRouterService} from '@gilsdav/ngx-translate-router';
+import {LocalizeRouterService} from 'localize-router';
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';

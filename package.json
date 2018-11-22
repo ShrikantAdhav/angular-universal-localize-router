@@ -44,6 +44,7 @@
     "@ngx-universal/translate-loader": "~5.0.0",
     "angular-in-memory-web-api": "~0.7.0",
     "core-js": "~2.5.7",
+    "localize-router": "^2.0.0-RC.2",
     "localize-router-lazy-universal-module-loader": "1.0.0-ntr",
     "rxjs": "~6.3.3",
     "ts-loader": "~5.3.0",
